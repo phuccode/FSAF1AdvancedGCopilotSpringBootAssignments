@@ -1,0 +1,43 @@
+# Database Configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/phucdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: phucdb
+    password: 77777
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  # JPA / Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  
+  # Caching Configuration  
+  cache:
+    type: simple
+
+# Server Configuration
+server:
+  port: 8081
+
+# Spring Boot Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+  health:
+    diskspace:
+      enabled: true
+    db:
+      enabled: true
+    defaults:
+      enabled: true

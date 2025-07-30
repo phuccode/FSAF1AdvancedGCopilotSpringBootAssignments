@@ -1,0 +1,6 @@
+com\example\lab4\config\SecurityConfigTest$DashboardAccessTests.class
+com\example\lab4\config\SecurityConfigTest$ReviewAccessTests.class
+com\example\lab4\service\OrderServiceIntegrationTest$TestData.class
+com\example\lab4\config\SecurityConfigTest.class
+com\example\lab4\service\OrderServiceIntegrationTest.class
+com\example\lab4\config\SecurityConfigTest$ProductManagementTests.class
